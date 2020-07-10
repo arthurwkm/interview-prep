@@ -127,3 +127,13 @@ Java Model Exception: Java Model Status [Unknown javadoc format for System {key=
 	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
 !SUBENTRY 1 org.eclipse.jdt.core 4 1009 2020-07-08 19:42:00.162
 !MESSAGE Unknown javadoc format for System {key=Ljava/lang/System;} [in System.class [in java.lang [in <module:java.base>]]]
+!SESSION 2020-07-10 13:10:46.652 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=11.0.7
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-07-10 13:11:23.612
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
