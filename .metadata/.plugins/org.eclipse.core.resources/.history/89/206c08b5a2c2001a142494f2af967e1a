@@ -1,0 +1,30 @@
+package basic_implementations;
+
+import java.util.LinkedList;
+
+public class HashTable {
+
+	public static void main(String[] args) {
+		
+
+	}
+	
+	
+	class Hashtable{
+		LinkedList[] data;
+		void put(String key) {
+			int hashcode = hashCode(key);
+			int index = convertoToIndex(hashcode);
+			LinkedList list = data[index];
+			list.add(key);
+		}
+		private int convertoToIndex(int hashcode) {
+			return hashcode%this.data.length;
+		}
+		public int hashCode(String s) {
+			int index = 0;
+			return index;
+		}
+	}
+
+}

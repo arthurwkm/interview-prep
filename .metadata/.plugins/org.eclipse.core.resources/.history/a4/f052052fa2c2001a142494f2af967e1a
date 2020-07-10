@@ -1,0 +1,15 @@
+package basic_implementations;
+
+public class HashTable {
+
+	public static void main(String[] args) {
+		
+
+	}
+	
+	public int hashCode(String s) {
+		int index = 0;
+		return index;
+	}
+
+}
