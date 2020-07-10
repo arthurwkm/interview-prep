@@ -1,0 +1,9 @@
+quickSort
+	-pick an element randomly (pivot)
+	-walk through the array from both sides (left-right right-left) until you find an element out of order on both sides
+	-swap elements if theyre out of order (left of the pivot should be smaller than pivot, right should be bigger)
+	-repeat until the pointer for both sides encouter each other
+	-do quickSort on both sides reccursevely
+	
+	Complexity: O(nlogn) average
+		    O(n) very bad

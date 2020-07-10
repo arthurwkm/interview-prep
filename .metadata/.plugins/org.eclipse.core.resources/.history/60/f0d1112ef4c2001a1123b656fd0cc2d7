@@ -1,0 +1,19 @@
+package basic_implementations;
+
+public class QuickSort {
+	
+	public static void main(String[] args) {
+		int[] a = {10, 5, 11, 3, 2, 1, 4};
+		a = quickSort(a);
+		for (int i = 0; i < a.length; i++) {
+			System.out.println(a[i]);
+		}
+	}
+
+	private static int[] quickSort(int[] a) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+}
