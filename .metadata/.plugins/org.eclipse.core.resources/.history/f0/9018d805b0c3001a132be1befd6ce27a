@@ -1,0 +1,16 @@
+package test;
+
+import java.util.Arrays;
+
+public class Test {
+
+	public static void main(String[] args) {
+		StringBuilder nomes = new StringBuilder();
+        nomes.append("Carlos>").append("Maria>").append("José>").append("Renata");
+         nomes.
+    System.out.println(nomes.toString());
+	}
+
+}
+
+

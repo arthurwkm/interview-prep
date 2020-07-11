@@ -1,0 +1,75 @@
+package strings;
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+public class SherlockValidString {
+
+    // Complete the isValid function below.
+    static String isValid(String s) {
+
+
+    }
+    
+    int countAnagrams(LinkedList list, String substring){
+        int anagrams = 0;
+        int count2[] = new int[26]; 
+        int count1[] = new int[26]; 
+        for (int j = 0; j < list.size(); j++) {
+            String substring2 = ((String) list.get(j));
+            
+            Arrays.fill(count1, 0); 
+            Arrays.fill(count2, 0); 
+            if (substring.length() == substring2.length()) {
+                for (int i = 0; i < substring.length();i++) { 
+                    count1[(substring.charAt(i)-19)%26]++; 
+                    count2[(substring2.charAt(i)-19)%26]++; 
+                } 
+
+//                System.out.println("substring original:" + substring);
+//                for (int i = 0; i < 26;i++) {
+//                    System.out.print(count1[i]+" ");
+//                }
+//                System.out.println();
+//                System.out.println("possível anagrama:" + substring2);
+//                for (int i = 0; i < 26;i++) {
+//                
+//                    System.out.print(count2[i] + " ");
+//                }
+                boolean equals = true;
+                for (int i = 0; i < 26;i++){
+                    if(count1[i]!=count2[i]){
+                        equals = false;
+                        break;
+                    }
+                }
+                //System.out.println();
+                if(equals) {
+                    anagrams++;
+                }
+            }
+        }
+        return anagrams;
+    }
+
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) throws IOException {
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+
+        String s = scanner.nextLine();
+
+        String result = isValid(s);
+
+        bufferedWriter.write(result);
+        bufferedWriter.newLine();
+
+        bufferedWriter.close();
+
+        scanner.close();
+    }
+}
