@@ -1,0 +1,14 @@
+package test;
+
+public class Test {
+
+	public static void main(String[] args) {
+		String a = "blabla";
+		a.chars()
+        .mapToObj(i -> (char)i)
+        .forEach(System.out::println);
+	}
+
+}
+
+
